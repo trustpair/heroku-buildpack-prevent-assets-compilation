@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# bin/compile BUILD_DIR CACHE_DIR ENV_DIR
+
+BUILD_DIR=$1
+ASSETS_DIR=$BUILD_DIR/public/assets
+
+mkdir -p $ASSETS_DIR
+
+touch $ASSETS_DIR/.sprockets-manifest-DISABLE-ASSET-PRECOMPILE.json
